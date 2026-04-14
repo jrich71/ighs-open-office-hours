@@ -1,0 +1,26 @@
+title: "IGHS AI Open Office Hours"
+description: "An open meeting to discuss global health AI topics and workshop various tools."
+baseurl: "/ighs-open-office-hours"
+url: "https://jrichardson.github.io"
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Navigation
+nav_links:
+  - title: Home
+    url: /
+  - title: Papers
+    url: /papers/
+  - title: Resources
+    url: /resources/
+
+# Contact / social (optional — fill in or remove)
+github_username: jrichardson
+email: ""
+
+# Theme
+theme: null
+plugins: []
