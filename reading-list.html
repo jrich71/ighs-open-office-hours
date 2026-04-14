@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading List | IGHS AI Open Office Hours</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="index.html">IGHS AI Open Office Hours</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reading-list.html" class="active">Reading List</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+
+  <div class="page-header">
+    <h1>Reading List</h1>
+    <p>Papers discussed and upcoming at IGHS AI Open Office Hours. Titles link to the original source.</p>
+  </div>
+
+  <!-- ── NEXT PAPER ─────────────────────────────────────────── -->
+  <div class="section-title">Next Paper</div>
+  <div class="reading-list">
+
+    <!-- ── TEMPLATE ──────────────────────────────────────────────
+    <div class="reading-card featured">
+      <div class="reading-meta">
+        <span class="meta-tag speaker">&#128100; Presenter Name</span>
+        <span class="meta-tag date">&#128197; Month DD, YYYY</span>
+      </div>
+      <h3><a href="https://doi.org/..." target="_blank">Paper Title</a></h3>
+    </div>
+    ─────────────────────────────────────────────────────────── -->
+
+    <div class="empty-state">
+      <div class="emoji">&#128214;</div>
+      <strong>No paper scheduled yet.</strong><br>
+      Add an entry using the template above.
+    </div>
+
+  </div>
+
+  <br>
+
+  <!-- ── UPCOMING ───────────────────────────────────────────── -->
+  <div class="section-title">Upcoming Papers</div>
+  <div class="reading-list">
+
+    <!-- ── TEMPLATE ──────────────────────────────────────────────
+    <div class="reading-card">
+      <div class="reading-meta">
+        <span class="meta-tag speaker">&#128100; Presenter Name</span>
+        <span class="meta-tag date">&#128197; Month DD, YYYY</span>
+      </div>
+      <h3><a href="https://doi.org/..." target="_blank">Paper Title</a></h3>
+    </div>
+    ─────────────────────────────────────────────────────────── -->
+
+    <div class="empty-state">
+      <div class="emoji">&#128197;</div>
+      <strong>No upcoming papers scheduled.</strong>
+    </div>
+
+  </div>
+
+  <br>
+
+  <!-- ── PREVIOUS ───────────────────────────────────────────── -->
+  <div class="section-title">Previous Papers</div>
+  <div class="reading-list">
+
+    <!-- ── TEMPLATE ──────────────────────────────────────────────
+    <div class="reading-card past">
+      <div class="reading-meta">
+        <span class="meta-tag speaker">&#128100; Presenter Name</span>
+        <span class="meta-tag date">&#128197; Month DD, YYYY</span>
+      </div>
+      <h3><a href="https://doi.org/..." target="_blank">Paper Title</a></h3>
+    </div>
+    ─────────────────────────────────────────────────────────── -->
+
+    <div class="empty-state">
+      <div class="emoji">&#128193;</div>
+      <strong>No previously discussed papers yet.</strong>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>IGHS AI Open Office Hours &mdash; UCSF Institute for Global Health Sciences</span>
+    <span>Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
