@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papers | IGHS AI Open Office Hours</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="index.html">IGHS AI Open Office Hours</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="papers.html" class="active">Papers</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+
+  <div class="page-header">
+    <h1>Archived Papers</h1>
+    <p>Peer-reviewed papers discussed or referenced in IGHS AI Open Office Hours sessions.</p>
+  </div>
+
+  <div class="papers-list">
+
+    <!-- ── TEMPLATE: copy this block to add a paper ───────────────────
+    <div class="paper-card">
+      <h3>Full Paper Title</h3>
+      <div class="authors">Author A, Author B, Author C</div>
+      <span class="venue">Journal / Conference, Year</span>
+      <p class="abstract">
+        One or two sentence summary of the paper's contribution and relevance to global health AI.
+      </p>
+      <div class="session-links">
+        <a href="assets/files/paper.pdf">&#128196; PDF</a>
+        <a href="#">&#128279; DOI / Publisher</a>
+        <a href="#">&#128196; Discussion Slides</a>
+      </div>
+    </div>
+    ─────────────────────────────────────────────────────────────── -->
+
+    <div class="empty-state">
+      <div class="emoji">&#128218;</div>
+      <strong>Papers will be archived here after each session.</strong><br>
+      Drop PDFs into <code>assets/files/</code> and add an entry using the template above.
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>IGHS AI Open Office Hours &mdash; UCSF Institute for Global Health Sciences</span>
+    <span>Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

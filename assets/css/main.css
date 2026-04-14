@@ -207,6 +207,16 @@ header {
 }
 .session-links a:hover { background: var(--blue); color: #fff; text-decoration: none; }
 
+/* ─── Calendar ──────────────────────────────────────────────── */
+.calendar-wrap {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 2.5rem;
+}
+
 /* ─── Empty state ───────────────────────────────────────────── */
 .empty-state {
   text-align: center;
