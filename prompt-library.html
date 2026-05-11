@@ -27,16 +27,16 @@
 
   <div class="page-header">
     <h1>Prompt Library</h1>
-    <p>A growing collection of prompts for global health research, analysis, and communication. Click any card to copy the prompt.</p>
+    <p>A growing collection of prompts for global health research, analysis, and communication. Click the copy button on any card to copy the full prompt.</p>
   </div>
 
   <!-- ── Filter Buttons ── -->
   <div class="prompt-filters">
-    <button class="filter-btn active" onclick="filterPrompts('all')">All</button>
-    <button class="filter-btn" onclick="filterPrompts('research')">Research</button>
-    <button class="filter-btn" onclick="filterPrompts('qualitative')">Qualitative</button>
-    <button class="filter-btn" onclick="filterPrompts('writing')">Writing</button>
-    <button class="filter-btn" onclick="filterPrompts('data')">Data &amp; Analysis</button>
+    <button class="filter-btn active" onclick="filterPrompts('all', event)">All</button>
+    <button class="filter-btn" onclick="filterPrompts('research', event)">Research</button>
+    <button class="filter-btn" onclick="filterPrompts('qualitative', event)">Qualitative</button>
+    <button class="filter-btn" onclick="filterPrompts('writing', event)">Writing</button>
+    <button class="filter-btn" onclick="filterPrompts('data', event)">Data &amp; Analysis</button>
   </div>
 
   <!-- ── Prompt Grid ── -->
@@ -62,7 +62,22 @@
       </div>
       <h3>Literature Summary</h3>
       <p class="prompt-desc">Summarize a research paper into key points for a non-specialist audience.</p>
-      <div class="prompt-text">Summarize the following research paper for a global health practitioner who is not an AI expert. Highlight: (1) the main research question, (2) methods used, (3) key findings, (4) limitations, and (5) practical implications for low- and middle-income country settings. Keep the summary under 300 words and avoid jargon.\n\n[Paste paper abstract or full text here]</div>
+      <div class="prompt-text">----DEMO ONLY----
+
+You are a global health research analyst with expertise in synthesizing academic literature for practitioners.
+
+Summarize the research paper provided below.
+
+The audience is a global health practitioner working in low- and middle-income country (LMIC) settings who is not an AI specialist. Avoid jargon and keep the summary under 300 words.
+
+Structure your response with the following sections:
+1. Research Question
+2. Methods
+3. Key Findings
+4. Limitations
+5. Implications for LMICs
+
+[Paste paper abstract or full text here]</div>
       <span class="copy-confirm">Copied!</span>
     </div>
 
@@ -73,7 +88,17 @@
       </div>
       <h3>Thematic Coding Assistant</h3>
       <p class="prompt-desc">Generate an initial codebook from qualitative interview transcripts.</p>
-      <div class="prompt-text">You are a qualitative research assistant. Review the interview transcript below and identify recurring themes. For each theme, provide: (1) a short theme name, (2) a one-sentence definition, and (3) two illustrative quotes from the transcript. Organize themes into primary and sub-themes where appropriate.\n\n[Paste transcript here]</div>
+      <div class="prompt-text">----DEMO ONLY----
+
+You are an experienced qualitative researcher trained in grounded theory and thematic analysis.
+
+Analyze the interview transcript below and develop an initial codebook.
+
+This transcript is from a qualitative study in a global health context. The goal is to identify patterns that can inform program or policy decisions in a low- and middle-income country (LMIC) setting.
+
+For each theme, provide: (1) a short theme name, (2) a one-sentence definition, and (3) two illustrative quotes from the transcript. Organize themes into primary themes and sub-themes where appropriate.
+
+[Paste transcript here]</div>
       <span class="copy-confirm">Copied!</span>
     </div>
 
@@ -84,7 +109,17 @@
       </div>
       <h3>Grant Abstract Drafter</h3>
       <p class="prompt-desc">Draft a concise grant abstract from a project description.</p>
-      <div class="prompt-text">Write a 250-word grant abstract for the following global health project. The abstract should include: a brief background on the problem, the project's specific aims, the methods, expected outcomes, and significance. Use clear, compelling language suitable for a non-specialist review panel.\n\n[Paste project description here]</div>
+      <div class="prompt-text">----DEMO ONLY----
+
+You are a senior global health grant writer with experience securing funding from NIH, the Gates Foundation, and USAID.
+
+Draft a 250-word abstract for the global health project described below.
+
+This abstract will be submitted as part of a competitive grant application. The review panel is multidisciplinary and includes non-specialists, so clarity and impact matter as much as rigor.
+
+Structure the abstract as follows: (1) background on the problem, (2) specific aims, (3) methods, (4) expected outcomes, and (5) significance. Use compelling, plain language throughout.
+
+[Paste project description here]</div>
       <span class="copy-confirm">Copied!</span>
     </div>
 
@@ -95,7 +130,17 @@
       </div>
       <h3>Survey Data Interpreter</h3>
       <p class="prompt-desc">Interpret summary statistics from a health survey and highlight key findings.</p>
-      <div class="prompt-text">You are a global health data analyst. Review the following summary statistics from a health survey and provide: (1) the three most important findings, (2) any notable disparities by subgroup (e.g., gender, region, age), (3) data quality concerns to flag, and (4) recommended next steps for analysis. Write for a program manager audience.\n\n[Paste data or table here]</div>
+      <div class="prompt-text">----DEMO ONLY----
+
+You are a global health data analyst specializing in program monitoring and evaluation.
+
+Review the health survey summary statistics below and produce a concise findings brief.
+
+This data will be presented to program managers making resource allocation decisions for health programs in low- and middle-income countries (LMICs). The audience needs clear, actionable takeaways — not statistical detail.
+
+Provide: (1) the three most important findings, (2) notable disparities by subgroup (e.g., gender, region, age), (3) any data quality concerns to flag, and (4) recommended next steps for analysis. Write in plain language.
+
+[Paste data or table here]</div>
       <span class="copy-confirm">Copied!</span>
     </div>
 
@@ -106,7 +151,17 @@
       </div>
       <h3>Policy Brief Generator</h3>
       <p class="prompt-desc">Convert research findings into a one-page policy brief.</p>
-      <div class="prompt-text">Convert the following research findings into a one-page policy brief aimed at ministry of health decision-makers in a low-income country. Structure it as: (1) The Problem (2 sentences), (2) What the Evidence Shows (3–4 bullet points), (3) Recommended Actions (3 specific, actionable recommendations), and (4) a closing call to action. Use plain language and avoid academic terminology.\n\n[Paste research findings here]</div>
+      <div class="prompt-text">----DEMO ONLY----
+
+You are a global health policy advisor with experience translating research evidence into actionable recommendations for government audiences.
+
+Convert the research findings below into a one-page policy brief.
+
+The brief is intended for ministry of health decision-makers in low- and middle-income countries (LMICs) who need clear, evidence-based guidance to inform program or budget decisions.
+
+Structure the brief as: (1) The Problem (2 sentences), (2) What the Evidence Shows (3–4 bullet points), (3) Recommended Actions (3 specific, actionable recommendations), and (4) a closing call to action. Use plain language and avoid academic terminology.
+
+[Paste research findings here]</div>
       <span class="copy-confirm">Copied!</span>
     </div>
 
@@ -117,7 +172,17 @@
       </div>
       <h3>Research Gap Identifier</h3>
       <p class="prompt-desc">Identify gaps in the literature from a set of abstracts or a review.</p>
-      <div class="prompt-text">Based on the following collection of research abstracts, identify: (1) the key questions that have been addressed, (2) populations or geographies that are underrepresented, (3) methodological gaps, and (4) the top 3 most promising areas for future research. Present your response as a structured list.\n\n[Paste abstracts here]</div>
+      <div class="prompt-text">----DEMO ONLY----
+
+You are a systematic review expert with deep knowledge of global health research methodology.
+
+Analyze the collection of research abstracts below to map the current evidence landscape and identify gaps.
+
+This analysis will inform a research agenda for a global health institute focused on health systems strengthening in low- and middle-income countries (LMICs). Prioritize gaps that are most relevant to LMIC contexts.
+
+Produce a structured report covering: (1) key questions that have been addressed, (2) populations or geographies that are underrepresented, (3) methodological gaps, and (4) the top 3 priority areas for future research.
+
+[Paste abstracts here]</div>
       <span class="copy-confirm">Copied!</span>
     </div>
 
@@ -128,7 +193,17 @@
       </div>
       <h3>Interview Guide Builder</h3>
       <p class="prompt-desc">Generate a semi-structured interview guide for a given research topic.</p>
-      <div class="prompt-text">Create a semi-structured interview guide for a qualitative study on the following topic. Include: an opening section to build rapport, 5–7 main questions with 2–3 probes each, and a closing section. Questions should be open-ended, non-leading, and culturally sensitive for a low-resource setting. Tailor the language to be accessible for community-level participants.\n\nResearch topic: [Describe your topic here]</div>
+      <div class="prompt-text">----DEMO ONLY----
+
+You are a qualitative methods expert with field experience conducting research in low-resource settings.
+
+Develop a semi-structured interview guide for the research topic described below.
+
+Interviews will be conducted with community-level participants in a low- and middle-income country (LMIC) health setting. Questions must be accessible to participants with varying literacy levels and sensitive to local cultural norms.
+
+Include: an opening section to build rapport, 5–7 main questions with 2–3 probes each, and a closing section. All questions should be open-ended and non-leading.
+
+Research topic: [Describe your topic here]</div>
       <span class="copy-confirm">Copied!</span>
     </div>
 
@@ -146,7 +221,7 @@
 <script>
   function copyPrompt(btn) {
     const card = btn.closest('.prompt-card');
-    const text = card.querySelector('.prompt-text').innerText.replace(/\\n/g, '\n');
+    const text = card.querySelector('.prompt-text').innerText;
     navigator.clipboard.writeText(text).then(() => {
       const confirm = card.querySelector('.copy-confirm');
       confirm.classList.add('show');
@@ -154,7 +229,7 @@
     });
   }
 
-  function filterPrompts(category) {
+  function filterPrompts(category, event) {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     event.target.classList.add('active');
     document.querySelectorAll('.prompt-card').forEach(card => {

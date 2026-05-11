@@ -493,17 +493,9 @@ header {
   padding: 0.75rem 0.9rem;
   color: var(--text);
   line-height: 1.6;
-  max-height: 120px;
-  overflow: hidden;
+  max-height: 140px;
+  overflow-y: auto;
   white-space: pre-wrap;
-  position: relative;
-}
-.prompt-text::after {
-  content: "";
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 2rem;
-  background: linear-gradient(transparent, #f4f7fb);
 }
 
 .copy-confirm {
