@@ -494,6 +494,7 @@ header {
   color: var(--text);
   line-height: 1.6;
   max-height: 140px;
+  min-height: 0;
   overflow-y: auto;
   white-space: pre-wrap;
 }
