@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt Library | IGHS AI Open Office Hours</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="index.html">IGHS AI Open Office Hours</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reading-list.html">Reading List</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="prompt-library.html" class="active">Prompt Library</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+
+  <div class="page-header">
+    <h1>Prompt Library</h1>
+    <p>A growing collection of prompts for global health research, analysis, and communication. Click any card to copy the prompt.</p>
+  </div>
+
+  <!-- ── Filter Buttons ── -->
+  <div class="prompt-filters">
+    <button class="filter-btn active" onclick="filterPrompts('all')">All</button>
+    <button class="filter-btn" onclick="filterPrompts('research')">Research</button>
+    <button class="filter-btn" onclick="filterPrompts('qualitative')">Qualitative</button>
+    <button class="filter-btn" onclick="filterPrompts('writing')">Writing</button>
+    <button class="filter-btn" onclick="filterPrompts('data')">Data &amp; Analysis</button>
+  </div>
+
+  <!-- ── Prompt Grid ── -->
+  <div class="prompt-grid" id="promptGrid">
+
+    <!-- ── TEMPLATE: copy this block to add a prompt ──────────────
+    <div class="prompt-card" data-category="research">
+      <div class="prompt-card-header">
+        <span class="prompt-tag">Research</span>
+        <button class="copy-btn" onclick="copyPrompt(this)" title="Copy prompt">&#128203;</button>
+      </div>
+      <h3>Prompt Title</h3>
+      <p class="prompt-desc">Brief description of what this prompt does.</p>
+      <div class="prompt-text">Your prompt text goes here.</div>
+      <span class="copy-confirm">Copied!</span>
+    </div>
+    ──────────────────────────────────────────────────────────── -->
+
+    <div class="prompt-card" data-category="research">
+      <div class="prompt-card-header">
+        <span class="prompt-tag">Research</span>
+        <button class="copy-btn" onclick="copyPrompt(this)" title="Copy prompt">&#128203;</button>
+      </div>
+      <h3>Literature Summary</h3>
+      <p class="prompt-desc">Summarize a research paper into key points for a non-specialist audience.</p>
+      <div class="prompt-text">Summarize the following research paper for a global health practitioner who is not an AI expert. Highlight: (1) the main research question, (2) methods used, (3) key findings, (4) limitations, and (5) practical implications for low- and middle-income country settings. Keep the summary under 300 words and avoid jargon.\n\n[Paste paper abstract or full text here]</div>
+      <span class="copy-confirm">Copied!</span>
+    </div>
+
+    <div class="prompt-card" data-category="qualitative">
+      <div class="prompt-card-header">
+        <span class="prompt-tag">Qualitative</span>
+        <button class="copy-btn" onclick="copyPrompt(this)" title="Copy prompt">&#128203;</button>
+      </div>
+      <h3>Thematic Coding Assistant</h3>
+      <p class="prompt-desc">Generate an initial codebook from qualitative interview transcripts.</p>
+      <div class="prompt-text">You are a qualitative research assistant. Review the interview transcript below and identify recurring themes. For each theme, provide: (1) a short theme name, (2) a one-sentence definition, and (3) two illustrative quotes from the transcript. Organize themes into primary and sub-themes where appropriate.\n\n[Paste transcript here]</div>
+      <span class="copy-confirm">Copied!</span>
+    </div>
+
+    <div class="prompt-card" data-category="writing">
+      <div class="prompt-card-header">
+        <span class="prompt-tag">Writing</span>
+        <button class="copy-btn" onclick="copyPrompt(this)" title="Copy prompt">&#128203;</button>
+      </div>
+      <h3>Grant Abstract Drafter</h3>
+      <p class="prompt-desc">Draft a concise grant abstract from a project description.</p>
+      <div class="prompt-text">Write a 250-word grant abstract for the following global health project. The abstract should include: a brief background on the problem, the project's specific aims, the methods, expected outcomes, and significance. Use clear, compelling language suitable for a non-specialist review panel.\n\n[Paste project description here]</div>
+      <span class="copy-confirm">Copied!</span>
+    </div>
+
+    <div class="prompt-card" data-category="data">
+      <div class="prompt-card-header">
+        <span class="prompt-tag">Data &amp; Analysis</span>
+        <button class="copy-btn" onclick="copyPrompt(this)" title="Copy prompt">&#128203;</button>
+      </div>
+      <h3>Survey Data Interpreter</h3>
+      <p class="prompt-desc">Interpret summary statistics from a health survey and highlight key findings.</p>
+      <div class="prompt-text">You are a global health data analyst. Review the following summary statistics from a health survey and provide: (1) the three most important findings, (2) any notable disparities by subgroup (e.g., gender, region, age), (3) data quality concerns to flag, and (4) recommended next steps for analysis. Write for a program manager audience.\n\n[Paste data or table here]</div>
+      <span class="copy-confirm">Copied!</span>
+    </div>
+
+    <div class="prompt-card" data-category="writing">
+      <div class="prompt-card-header">
+        <span class="prompt-tag">Writing</span>
+        <button class="copy-btn" onclick="copyPrompt(this)" title="Copy prompt">&#128203;</button>
+      </div>
+      <h3>Policy Brief Generator</h3>
+      <p class="prompt-desc">Convert research findings into a one-page policy brief.</p>
+      <div class="prompt-text">Convert the following research findings into a one-page policy brief aimed at ministry of health decision-makers in a low-income country. Structure it as: (1) The Problem (2 sentences), (2) What the Evidence Shows (3–4 bullet points), (3) Recommended Actions (3 specific, actionable recommendations), and (4) a closing call to action. Use plain language and avoid academic terminology.\n\n[Paste research findings here]</div>
+      <span class="copy-confirm">Copied!</span>
+    </div>
+
+    <div class="prompt-card" data-category="research">
+      <div class="prompt-card-header">
+        <span class="prompt-tag">Research</span>
+        <button class="copy-btn" onclick="copyPrompt(this)" title="Copy prompt">&#128203;</button>
+      </div>
+      <h3>Research Gap Identifier</h3>
+      <p class="prompt-desc">Identify gaps in the literature from a set of abstracts or a review.</p>
+      <div class="prompt-text">Based on the following collection of research abstracts, identify: (1) the key questions that have been addressed, (2) populations or geographies that are underrepresented, (3) methodological gaps, and (4) the top 3 most promising areas for future research. Present your response as a structured list.\n\n[Paste abstracts here]</div>
+      <span class="copy-confirm">Copied!</span>
+    </div>
+
+    <div class="prompt-card" data-category="qualitative">
+      <div class="prompt-card-header">
+        <span class="prompt-tag">Qualitative</span>
+        <button class="copy-btn" onclick="copyPrompt(this)" title="Copy prompt">&#128203;</button>
+      </div>
+      <h3>Interview Guide Builder</h3>
+      <p class="prompt-desc">Generate a semi-structured interview guide for a given research topic.</p>
+      <div class="prompt-text">Create a semi-structured interview guide for a qualitative study on the following topic. Include: an opening section to build rapport, 5–7 main questions with 2–3 probes each, and a closing section. Questions should be open-ended, non-leading, and culturally sensitive for a low-resource setting. Tailor the language to be accessible for community-level participants.\n\nResearch topic: [Describe your topic here]</div>
+      <span class="copy-confirm">Copied!</span>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>IGHS AI Open Office Hours &mdash; UCSF Institute for Global Health Sciences</span>
+    <span>Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a></span>
+  </div>
+</footer>
+
+<script>
+  function copyPrompt(btn) {
+    const card = btn.closest('.prompt-card');
+    const text = card.querySelector('.prompt-text').innerText.replace(/\\n/g, '\n');
+    navigator.clipboard.writeText(text).then(() => {
+      const confirm = card.querySelector('.copy-confirm');
+      confirm.classList.add('show');
+      setTimeout(() => confirm.classList.remove('show'), 2000);
+    });
+  }
+
+  function filterPrompts(category) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    document.querySelectorAll('.prompt-card').forEach(card => {
+      card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
+    });
+  }
+</script>
+
+</body>
+</html>
