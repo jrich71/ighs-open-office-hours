@@ -45,11 +45,28 @@
     <div class="session-card">
       <h3>IGHS AI Open Office Hours</h3>
       <div class="session-meta">
-        <span class="meta-tag date">&#128197; Monday, April 28, 2026 &bull; 12:00&ndash;1:00 PM PT</span>
+        <span class="meta-tag date" id="next-session-date">&#128197; &bull; 12:00&ndash;1:00 PM PT</span>
         <span class="meta-tag">&#128205; Mission Hall, Room 3500</span>
       </div>
     </div>
   </div>
+
+  <script>
+    (function () {
+      // Anchor: Tue Apr 28, 2026 — sessions recur every 14 days at 12:00 PT.
+      // Update the anchor if the cadence changes.
+      var anchor = new Date(2026, 3, 28);
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+      var next = new Date(anchor.getTime());
+      while (next < today) next.setDate(next.getDate() + 14);
+      var label = next.toLocaleDateString('en-US', {
+        weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
+      });
+      document.getElementById('next-session-date').innerHTML =
+        '📅 ' + label + ' • 12:00–1:00 PM PT';
+    })();
+  </script>
 
   <br>
 
