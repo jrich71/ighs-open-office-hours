@@ -6,7 +6,7 @@ permalink: /resources/
 
 <div class="page-header">
   <h1>Resources</h1>
-  <p>Slide decks, tools, datasets, and links curated from IGHS AI Office Hours sessions.</p>
+  <p>Slide decks, tools, datasets, and links curated from IGHS AI Lab sessions.</p>
 </div>
 
 ---

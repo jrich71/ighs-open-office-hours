@@ -6,7 +6,7 @@ permalink: /papers/
 
 <div class="page-header">
   <h1>Archived Papers</h1>
-  <p>Peer-reviewed papers discussed or referenced in IGHS AI Open Office Hours sessions.</p>
+  <p>Peer-reviewed papers discussed or referenced in IGHS AI Lab sessions.</p>
 </div>
 
 <div class="papers-list">

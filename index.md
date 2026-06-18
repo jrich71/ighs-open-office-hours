@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div class="hero">
-  <h1>IGHS AI Open Office Hours</h1>
+  <h1>IGHS AI Lab</h1>
   <p>An open forum for researchers, clinicians, and practitioners to discuss global health AI topics, workshop tools, and explore emerging methods together.</p>
   <a href="https://calendar.google.com" class="btn btn-white" target="_blank">&#128197; Follow Calendar</a>
   &nbsp;
